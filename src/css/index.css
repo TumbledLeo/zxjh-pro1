@@ -1,0 +1,10 @@
+.app{
+  background:url(../img/bg2015071004.png)no-repeat center;
+  width:100px;
+  height:100px;
+  .wrap{
+    width:10px;
+    height:10px;
+    background:#000;
+  }
+}
