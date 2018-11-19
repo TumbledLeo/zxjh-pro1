@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+
+        if (IsPC()) {
+            // console.log('电脑版');
+            window.location.href = '../index.html';//  这是电脑网址
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>国家大剧院原创民族舞剧《天路》</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="国家大剧院原创舞剧·天路">
+    <meta name="keywords" content="国家大剧院原创舞剧·天路">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../lib/swiper/swiper.min.3.css">
+    <link rel="stylesheet" href="../lib/wow/animate.min.css">
+    <script>
+        // 动态设置html的fontSize的数值
+        var fontSize = window.screen.width / 10 + "px";
+        // 1rem = 37.5px;
+        console.log(window.screen.width);
+        document.getElementsByTagName("html")[0].style.fontSize = fontSize;
+    </script>
+</head>
+<body>
+
+<header class="header">
+    <a href="javascript:;" class="menu">菜单</a>
+    <a href="http://www.chncpa.org/" class="logo"><img src="images/logo.png"></a>
+    <a href="javascript:;" class="music on js_music_ctrl">
+        <audio id="music" src="../media/1.mp3" loop autoplay></audio>
+    </a>
+</header>
+
+<main id="app" class="main">
+    <!-- 顶部logo和导航 -->
+    <nav class="nav">
+        <ul class="nav_bg">
+            <li class="on"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">剧目剧情</a></li>
+            <li><a href="javascript:;">创作团队</a></li>
+            <li><a href="javascript:;">舞台呈现</a></li>
+            <li><a href="javascript:;">亮点集萃</a></li>
+            <li><a href="javascript:;">幕后精彩</a></li>
+        </ul>
+    </nav>
+    <!-- 主体轮播内容 -->
+    <div class="swiper-container swiper-container-lg">
+        <div class="swiper-wrapper swiper-wrapper-lg">
+
+            <!-- 主页 -->
+            <div id="home" class="swiper-slide swiper-slide-lg home">
+                <h3 class="textimg3 animated fadeInUp">这条路上，充满着坚定的信仰与希望 这条路上，饱含着深切的盼望与依恋</h3>
+                <h2 class="textimg1 animated fadeInUp">国家大剧院原创舞剧</h2>
+                <h1 class="textimg2 animated zoomIn">天路</h1>
+                <div class="btn_group animated fadeInUp">
+                    <h3 class="date">国家大剧院 戏剧场</h3>
+                    <a href="http://ticket.chncpa.org/product-1053859.html" class="ticket">立即订票</a>
+                </div>
+            </div>
+            <!-- 剧目介绍 -->
+            <div id="jmjs" class="jmjs swiper-slide swiper-slide-lg">
+                <h2 class="tit" style="width: 73px;height:18px;background: url('images/jm.png') no-repeat;-webkit-background-size: cover;background-size: cover;margin: 0 auto;"></h2>
+                <div class="tabContents animated fadeInUp">
+                    <div class="tabContent">
+                        <h2>剧目介绍</h2>
+                        <p>
+                            青藏铁路作为“改革开放”的重点工程，是藏族同胞与全国各族人民的连心路，是雪域高原迈向现代化的腾飞路，也是勤劳智慧的中国人民不断创造非凡业绩的奋斗路，被誉为“天路”。《天路》是国家大剧院以青藏铁路的建设为题材，在“改革开放40周年”之际以三代人“不忘初心”的坚守筑路为故事主体，于“七一”档期推出一部歌颂藏汉人民情谊、展现改革开放风貌的时代作品。本剧集结国内一流主创、实力知名舞者，倾情打造情感淳朴真挚、色彩鲜明浑厚的现实题材民族舞剧。</p>
+                    </div>
+                    <div class="tabContent">
+                        <h2>剧情介绍</h2>
+                        <p>上世纪70年代末，青年铁道兵卢天与战友们奋战在青藏铁路建设一线，他面临着人生中最艰难的一次抉择。一面是遵从父亲的遗志和自己的内心，将铁路修到拉萨，另一面是母亲要求他退伍返城参加刚刚恢复的高考。在痛苦的煎熬中，卢天结识了淳朴的藏族姐弟央金、索朗以及一群可爱的藏族牧民。与他们朝夕相处，卢天深深地爱上了这片土地。仿佛是命运的捉弄，就在他终于坚定了留守的决心时，一纸退伍通知书递到了他的面前……</p>
+                        <p>一场大地震蓦然降临。已经背起行囊准备返城的卢天没有一丝犹豫，转身赶回隧道工地营救战友，和战友们一起牺牲。他完成了对自己的承诺，永远地留了下来，默默地守护着青藏高原，守护着这条神奇的天路……</p>
+                    </div>
+                </div>
+                <div class="tabs animated fadeInUp">
+                    <a href="javascript:;" class="tab btn js_tab">剧目介绍</a>
+                    <a href="javascript:;" class="tab btn js_tab">剧情介绍</a>
+                </div>
+            </div>
+            <!-- 创作解析 -->
+            <div id="czjx" class="czjx swiper-slide swiper-slide-lg">
+                <h2 class="tit" style="width: 73px;height:18px;background: url('images/cz.png') no-repeat;-webkit-background-size: cover;background-size: cover;margin: 0 auto;"></h2>
+                <div class="tabs">
+                    <div class="tab js_tab btn_cur">主创</div>
+                    <div class="tab js_tab">主演</div>
+                </div>
+                <a href="http://m.chncpa.org/product-1053859.html" target="_blank" class="see_more"> 了解更多>> </a>
+                <div class="tabContents">
+                    <div class="tabContent zc">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="clearfix">
+                                        <li style="margin-bottom: 50px;">
+                                            <img src="../images/zc1.png">
+                                            <p>王舸 总编导</p>
+                                            <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                        </li>
+                                        <li style="margin-bottom: 50px;">
+                                            <img src="../images/zc2.png">
+                                            <p>罗斌 编剧</p>
+                                            <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                        </li>
+                                        <li style="margin-bottom: 50px;">
+                                            <img src="../images/zc3.png">
+                                            <p>印青 音乐总监</p>
+                                            <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                        </li>
+                                        <li style="margin-bottom: 50px;">
+                                            <img src="../images/zc4.png">
+                                            <p>杨帆 作曲</p>
+                                            <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc5.png">
+                                            <p>张珅 编舞</p>
+                                        </li>
+                                        <li style="margin-right: 0;">
+                                            <img src="../images/zc6.png">
+                                            <p>柳雯 编舞</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc7.png">
+                                            <p>丛帅帅 编舞</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc8.png">
+                                            <p>龚勋 舞美设计</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc9.png">
+                                            <p>阿宽 服装设计</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc10.png">
+                                            <p>任冬生 灯光/多媒体设计</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zc11.png">
+                                            <p>贾雷 造型设计</p>
+                                        </li>
+                                        <li style="margin-right: 0;">
+                                            <img src="../images/zc12.png">
+                                            <p>李陟 舞台台本设计</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+
+                    <div class="tabContent zy">
+                        <div class=" swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="js_img clearfix">
+                                        <li>
+                                            <img src="../images/zy1.png">
+                                            <p>黎星 饰 卢天</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy2.png">
+                                            <p>王圳冰 饰 卢天</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy3.png">
+                                            <p>冯敬雅 饰 姐姐央金</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy4.png">
+                                            <p>秦丹妮 饰 姐姐央金</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy5.png">
+                                            <p>拉巴扎西 饰 弟弟索朗</p>
+                                        </li>
+                                        <li style="margin-right: 0;">
+                                            <img src="../images/zy6.png">
+                                            <p>宋玉龙 饰 老东北</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy7.png">
+                                            <p>李超 饰 小四川</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy8.png">
+                                            <p>于建伟 饰 卢天父亲</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy9.png">
+                                            <p>王金格 饰 卢天母亲</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy10.png">
+                                            <p>索朗群旦 饰 扎西</p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/zy11.png">
+                                            <p>吕诗琦 饰 卓玛</p>
+                                        </li>
+                                       <!-- <li style="margin-right: 0;">
+                                            <img src="../images/zy12.png">
+                                            <p>呂诗琦 饰 卓玛</p>
+                                        </li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 舞台呈现 -->
+            <div id="wtcx" class="wtcx swiper-slide swiper-slide-lg">
+                <h2 class="tit" style="width: 73px;height:18px;background: url('images/wt.png') no-repeat;-webkit-background-size: cover;background-size: cover;margin: 0 auto;"></h2>
+                <div class="tabs">
+                    <div class="tab js_tab btn_cur">舞美图</div>
+                    <div class="tab js_tab">服装图</div>
+                    <div class="tab js_tab">定妆照</div>
+                </div>
+                <div class="tabContents">
+                    <div class="tabContent wm">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="js_img clearfix">
+                                        <li><img src="../images/wm_1.jpg"></li>
+                                        <li><img src="../images/wm_2.jpg"></li>
+                                        <li><img src="../images/wm_3.jpg"></li>
+                                        <li><img src="../images/wm_4.jpg"></li>
+                                        <li><img src="../images/wm_5.jpg"></li>
+                                        <li><img src="../images/wm_6.jpg"></li>
+                                        <li><img src="../images/wm_7.jpg"></li>
+                                        <li><img src="../images/wm_8.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+
+                    <div class="tabContent fs">
+                        <div class=" swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="js_img clearfix">
+                                        <li><img src="../images/fs_1.jpg">
+                                            <p>卢天</p></li>
+                                        <li><img src="../images/fs_2.jpg">
+                                            <p>姐姐央金（上半场）</p></li>
+                                        <li><img src="../images/fs_3.jpg">
+                                            <p>弟弟索朗</p></li>
+                                        <li><img src="../images/fs_4.jpg">
+                                            <p>战士“老东北”</p></li>
+                                        <li><img src="../images/fs_5.jpg">
+                                            <p>战士“小四川”</p></li>
+                                        <li><img src="../images/fs_6.jpg">
+                                            <p>藏族男人</p></li>
+                                        <li><img src="../images/fs_7.jpg">
+                                            <p>藏族母亲</p></li>
+                                        <li><img src="../images/fs_8.jpg">
+                                            <p>卢天父亲</p></li>
+                                        <li><img src="../images/fs_9.jpg">
+                                            <p>卢天母亲</p></li>
+                                        <li><img src="../images/fs_10.jpg">
+                                            <p>春种</p></li>
+                                        <li><img src="../images/fs_11.jpg">
+                                            <p>灯舞</p></li>
+                                        <li><img src="../images/fs_12.jpg">
+                                            <p>头巾舞</p></li>
+                                        <li><img src="../images/fs_13.jpg">
+                                            <p>草帽舞</p></li>
+                                        <li><img src="../images/fs_14.jpg">
+                                            <p>朝圣者</p></li>
+                                        <li><img src="../images/fs_15.jpg">
+                                            <p>朝圣者</p></li>
+                                        <li><img src="../images/fs_16.jpg">
+                                            <p>民族盛装</p></li>
+                                        <li><img src="../images/fs_17.jpg">
+                                            <p>民族盛装</p></li>
+                                        <li><img src="../images/fs_18.jpg">
+                                            <p>勘探队</p></li>
+                                        <li><img src="../images/fs_19.jpg">
+                                            <p>铁道兵</p></li>
+                                        <li><img src="../images/fs_20.jpg">
+                                            <p>铁道兵战士</p></li>
+                                        <li><img src="../images/fs_21.jpg">
+                                            <p>三期建设者</p></li>
+                                        <li><img src="../images/fs_22.jpg">
+                                            <p>三期建设者</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <!-- 定妆照列表 -->
+                    <div class="tabContent dz">
+                        <div class=" swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="js_img clearfix">
+                                        <li><img src="../images/dz2.jpg"><p>合影</p></li>
+                                        <li><img src="../images/dz3.jpg"><p>合影</p></li>
+                                        <li><img src="../images/dz4.jpg"><p>姐姐央金</p></li>
+                                        <li><img src="../images/dz5.jpg"><p>卢天与索朗</p></li>
+                                        <li><img src="../images/dz6.jpg"><p>卢天与索朗</p></li>
+                                        <li><img src="../images/dz7.jpg"><p>卢天与央金</p></li>
+                                        <li><img src="../images/dz8.jpg"><p>卢天与父亲</p></li>
+                                        <li><img src="../images/dz9.jpg"><p>卢天与父母</p></li>
+                                        <li><img src="../images/dz10.jpg"><p>三兄弟</p></li>
+                                        <li><img src="../images/dz11.jpg"><p>三兄弟</p></li>
+                                        <li><img src="../images/dz12.jpg"><p>央金与索朗</p></li>
+                                        <li><img src="../images/dz13.jpg"><p>《天路》</p></li>
+                                        <li><img src="../images/dz14.jpg"><p>《天路》</p></li>
+                                        <li><img src="../images/dz1.jpg"><p>藏族夫妇</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 亮点集萃 -->
+            <div id="ldjc" class="ldjc swiper-slide swiper-slide-lg">
+                <h2 class="tit" style="width: 73px;height:18px;background: url('images/ld.png') no-repeat;-webkit-background-size: cover;background-size: cover;margin: 0 auto;"></h2>
+                <ul>
+                    <li><a class="ld js_text" href="javascript:;"><img src="images/ld1.jpg"></a>
+                    </li>
+                    <li><a class="ld js_text" href="javascript:;"><img src="images/ld2.jpg"></a></li>
+                    <li><a class="ld js_text" href="javascript:;"><img src="images/ld3.jpg"></a></li>
+                </ul>
+            </div>
+            <!-- 幕后精彩 -->
+            <div id='mhjc' class="mhjc swiper-slide swiper-slide-lg">
+                <h2 class="tit" style="width: 73px;height:18px;background: url('images/mh.png') no-repeat;-webkit-background-size: cover;background-size: cover;margin: 0 auto;"></h2>
+                <div class="tabs animated fadeInUp">
+                    <div class="tab btn js_tab">精彩瞬间</div>
+                    <div class="tab btn js_tab">排练现场</div>
+
+                </div>
+                <div class="tabContents animated fadeInUp">
+
+                    <div class="tabContent pl">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul class="js_img clearfix">
+                                        <li><img src="../images/pl_1.jpg"></li>
+                                        <li><img src="../images/pl_3.jpg"></li>
+                                        <li><img src="../images/pl_4.jpg"></li>
+                                        <li><img src="../images/pl_6.jpg"></li>
+                                        <li><img src="../images/pl_7.jpg"></li>
+                                        <li><img src="../images/pl_8.jpg"></li>
+                                        <li><img src="../images/pl_9.jpg"></li>
+                                        <li><img src="../images/pl_10.jpg"></li>
+                                        <li><img src="../images/pl_11.jpg"></li>
+                                        <li><img src="../images/pl_12.jpg"></li>
+                                        <li><img src="../images/pl_2.jpg"></li>
+                                        <li><img src="../images/pl_5.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+
+                    <div class="tabContent">
+                        <div class="video-wrap">
+                            <img class="video-img" src="images/mvideo.jpg">
+                            <video id="video" width="100%" src="../media/1.mp4" controls="controls">
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="bd" style="display: none; width: 0;height: 0;position: absolute;z-index: 0;">
+
+        <div id="home" class="home">
+            <h3 class="textimg3 animated fadeInUp">这条路上，充满着坚定的信仰与希望 这条路上，饱含着深切的盼望与依恋</h3>
+            <h2 class="textimg1 animated fadeInUp">国家大剧院原创舞剧</h2>
+            <h1 class="textimg2 animated zoomIn">天路</h1>
+
+            <div class="btn_group animated fadeInUp">
+                <h3 class="date">国家大剧院 戏剧场</h3>
+                <a href="http://ticket.chncpa.org/product-1053859.html" class="ticket">立即订票</a>
+            </div>
+        </div>
+
+        <div id="jmjs" class="jmjs main-container">
+            <div class="tabContents animated fadeInUp">
+                <div class="tabContent">
+                    <h2>剧目介绍</h2>
+                    <p>
+                        青藏铁路作为“改革开放”的重点工程，是藏族同胞与全国各族人民的连心路，是雪域高原迈向现代化的腾飞路，也是勤劳智慧的中国人民不断创造非凡业绩的奋斗路，被誉为“天路”。国家大剧院以青藏铁路的建设为题材，在“改革开放40周年”之际以三代人“不忘初心”的坚守筑路为故事主体，于“七一”档期推出一部歌颂藏汉人民情谊、展现改革开放风貌的时代作品。本剧集结国内一流主创、实力知名舞者，倾情打造情感淳朴真挚、色彩鲜明浑厚的现实题材民族舞剧。</p>
+                </div>
+                <div class="tabContent">
+                    <h2>剧情介绍</h2>
+                    <p>
+                        2007年，青海关角山。推土机、钻探机、吊车等大型机械设备从远方的地平线处缓缓驶来，轰鸣声中，一群铁路人来到关角山，为新关角隧道破土。经过一片乱石堆时，铁路人意外的遇见了一位中年的藏族妇女（央金）和他的弟弟（索朗）。他们手捧酥油灯，向石堆和地面一把把撒着青稞，仿佛在祭奠着什么。见铁路人到来，索朗莫名地激动起来，喊着铁路人听不懂的藏语，冲过来拦在他们面前，阻止他们进入石堆。央金放下青稞，柔声把索朗叫到自己面前，轻轻地擦拭着手中由于常年抚摸而光可鉴人的酥油灯。回到姐姐身边的索朗安静下来，拿起挂在胸前的一把小口琴吹奏起来。他吹奏的却不是乐曲，而仿佛是火车行进的声音，“呜呜呜……”。央金平静而深情的凝望着四周散落的乱石堆，用她低沉而沧桑的嗓音，喃喃的说着什么。伴随着她的讲述，所有人仿佛回到了三十年前……</p>
+                </div>
+            </div>
+            <div class="tabs animated fadeInUp">
+                <a href="javascript:;" class="tab btn js_tab">剧目介绍</a>
+                <a href="javascript:;" class="tab btn js_tab">剧情介绍</a>
+            </div>
+        </div>
+
+        <div id="czjx" class="czjx main-container">
+            <div class="tabs">
+                <div class="tab js_tab btn_cur">主创</div>
+                <div class="tab js_tab">主演</div>
+            </div>
+            <a href="http://ticket.chncpa.org/product-1053859.html" target="_blank" class="see_more"> 了解更多>> </a>
+            <div class="tabContents">
+                <div class="tabContent zc">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="clearfix">
+                                    <li style="margin-bottom: 40px;">
+                                        <img src="../images/zc1.png">
+                                        <p>王舸 总编导</p>
+                                        <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                    </li>
+                                    <li style="margin-bottom: 40px;">
+                                        <img src="../images/zc2.png">
+                                        <p>罗斌 编剧</p>
+                                        <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                    </li>
+                                    <li style="margin-bottom: 40px;">
+                                        <img src="../images/zc3.png">
+                                        <p>印青 音乐总监</p>
+                                        <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                    </li>
+                                    <li style="margin-bottom: 40px;">
+                                        <img src="../images/zc4.png">
+                                        <p>杨帆 作曲</p>
+                                        <a href="javascript:;" class="btn_czjx js_text">创作解析</a>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc5.png">
+                                        <p>张珅 编舞</p>
+                                    </li>
+                                    <li style="margin-right: 0;">
+                                        <img src="../images/zc6.png">
+                                        <p>柳雯 编舞</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc7.png">
+                                        <p>丛帅帅 编舞</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc8.png">
+                                        <p>龚勋 舞美设计</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc9.png">
+                                        <p>阿宽 服装设计</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc10.png">
+                                        <p>任冬生 灯光/多媒体设计</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zc11.png">
+                                        <p>贾雷 造型设计</p>
+                                    </li>
+                                    <li style="margin-right: 0;">
+                                        <img src="../images/zc12.png">
+                                        <p>李陟 舞台台本设计</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+                <div class="tabContent zy">
+                    <div class=" swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="js_img clearfix">
+                                    <li>
+                                        <img src="../images/zy1.png">
+                                        <p>黎星 饰 卢天</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy2.png">
+                                        <p>王圳冰 饰 卢天</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy3.png">
+                                        <p>冯敬雅 饰 姐姐央金</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy4.png">
+                                        <p>秦丹妮 饰 姐姐央金</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy5.png">
+                                        <p>拉巴扎西 饰 弟弟索朗</p>
+                                    </li>
+                                    <li style="margin-right: 0;">
+                                        <img src="../images/zy6.png">
+                                        <p>曾明 饰 弟弟索朗</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy7.png">
+                                        <p>宋玉龙 饰 老东北</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy8.png">
+                                        <p>李超 饰 小四川</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy9.png">
+                                        <p>索朗群旦 饰 藏族男人</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy10.png">
+                                        <p>吕诗琦 饰 藏族女人</p>
+                                    </li>
+                                    <li>
+                                        <img src="../images/zy11.png">
+                                        <p>于建伟 饰 卢天父亲</p>
+                                    </li>
+                                    <li style="margin-right: 0;">
+                                        <img src="../images/zy12.png">
+                                        <p>王金格 饰 卢天母亲</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wtcx" class="wtcx main-container">
+            <img class="wtcx_sbg" src="images/bg_wtcx.png">
+            <div class="tabs">
+                <div class="tab js_tab btn_cur">舞美图</div>
+                <div class="tab js_tab">服装图</div>
+            </div>
+            <div class="tabContents">
+                <div class="tabContent wm">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="js_img clearfix">
+                                    <li><img src="../images/wm_1.jpg"></li>
+                                    <li><img src="../images/wm_2.jpg"></li>
+                                    <li><img src="../images/wm_3.jpg"></li>
+                                    <li><img src="../images/wm_4.jpg"></li>
+                                    <li><img src="../images/wm_5.jpg"></li>
+                                    <li><img src="../images/wm_6.jpg"></li>
+                                    <li><img src="../images/wm_7.jpg"></li>
+                                    <li><img src="../images/wm_8.jpg"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+                <div class="tabContent fs">
+                    <div class=" swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="js_img clearfix">
+                                    <li><img src="../images/fs_1.jpg">
+                                        <p>卢天</p></li>
+                                    <li><img src="../images/fs_2.jpg">
+                                        <p>姐姐央金（上半场）</p></li>
+                                    <li><img src="../images/fs_3.jpg">
+                                        <p>弟弟索朗</p></li>
+                                    <li><img src="../images/fs_4.jpg">
+                                        <p>战士“老东北”</p></li>
+                                    <li><img src="../images/fs_5.jpg">
+                                        <p>战士“小四川”</p></li>
+                                    <li><img src="../images/fs_6.jpg">
+                                        <p>藏族男人</p></li>
+                                    <li><img src="../images/fs_7.jpg">
+                                        <p>藏族母亲</p></li>
+                                    <li><img src="../images/fs_8.jpg">
+                                        <p>卢天父亲</p></li>
+                                    <li><img src="../images/fs_9.jpg">
+                                        <p>卢天母亲</p></li>
+                                    <li><img src="../images/fs_10.jpg">
+                                        <p>春种</p></li>
+                                    <li><img src="../images/fs_11.jpg">
+                                        <p>灯舞</p></li>
+                                    <li><img src="../images/fs_12.jpg">
+                                        <p>头巾舞</p></li>
+                                    <li><img src="../images/fs_13.jpg">
+                                        <p>草帽舞</p></li>
+                                    <li><img src="../images/fs_14.jpg">
+                                        <p>朝圣者</p></li>
+                                    <li><img src="../images/fs_15.jpg">
+                                        <p>朝圣者</p></li>
+                                    <li><img src="../images/fs_16.jpg">
+                                        <p>民族盛装</p></li>
+                                    <li><img src="../images/fs_17.jpg">
+                                        <p>民族盛装</p></li>
+                                    <li><img src="../images/fs_18.jpg">
+                                        <p>勘探队</p></li>
+                                    <li><img src="../images/fs_19.jpg">
+                                        <p>铁道兵</p></li>
+                                    <li><img src="../images/fs_20.jpg">
+                                        <p>铁道兵战士</p></li>
+                                    <li><img src="../images/fs_21.jpg">
+                                        <p>三期建设者</p></li>
+                                    <li><img src="../images/fs_22.jpg">
+                                        <p>三期建设者</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="ldjc" class="ldjc main-container">
+            <ul>
+                <li><a class="ld js_text" href="javascript:;"><img src="images/ld1.jpg"></a>
+                </li>
+                <li><a class="ld js_text" href="javascript:;"><img src="images/ld2.jpg"></a></li>
+                <li><a class="ld js_text" href="javascript:;"><img src="images/ld3.jpg"></a></li>
+            </ul>
+        </div>
+
+        <div id='mhjc' class="mhjc main-container">
+            <div class="tabs animated fadeInUp">
+                <div class="tab btn js_tab">幕后瞬间</div>
+                <div class="tab btn js_tab">幕后视频</div>
+
+            </div>
+            <div class="tabContents animated fadeInUp">
+
+                <div class="tabContent pl">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="js_img clearfix">
+                                    <li><img src="../images/pl_1.jpg"></li>
+                                    <li><img src="../images/pl_3.jpg"></li>
+                                    <li><img src="../images/pl_4.jpg"></li>
+                                    <li><img src="../images/pl_6.jpg"></li>
+                                    <li><img src="../images/pl_7.jpg"></li>
+                                    <li><img src="../images/pl_8.jpg"></li>
+                                    <li><img src="../images/pl_9.jpg"></li>
+                                    <li><img src="../images/pl_10.jpg"></li>
+                                    <li><img src="../images/pl_11.jpg"></li>
+                                    <li><img src="../images/pl_12.jpg"></li>
+                                    <li><img src="../images/pl_2.jpg"></li>
+                                    <li><img src="../images/pl_5.jpg"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+                <div class="tabContent">
+                    <video width="100%" style="margin: 20px auto;" src="../media/1.mp4" controls="controls">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- 预览大图 -->
+<div class="big_img_view js_bigimgview">
+    <div class="inner">
+        <img src="../images/fs_1.jpg">
+    </div>
+    <a href="javascript:;" class="close js_close_bigimgview">+</a>
+</div>
+
+<!-- 预览文字 -->
+<div class="text_view js_textview">
+    <div class="inner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <h2>歌颂勇往直前、执着坚守的“中国梦”精神</h2>
+                        <p>
+                            青藏线大部分线路处于高海拔地区和“生命禁区”，青藏铁路建设面临着三大世界铁路建设难题：千里多年冻土的地质构造、高寒缺氧的环境和脆弱的生态。在异常艰难的自然环境下，几代青藏铁路建设者们，怀着同样的激情与梦想，克服万难，用年轻的身躯和钢铁的意志去铺设这条充满希望的“天路”。正因为这种勇往直前、执着坚守的“中国梦”精神，青藏铁路全线贯通，千千万万西藏人民的命运得以改变，藏族同胞终于可以走出贫穷，走向幸福。</p>
+                        <p class="font_son">
+                            罗斌——“青藏铁路的修建，是内地和西藏的联络，也是整个文化领域的沟通。所有为这条路奉献的人，是为了那方水土那方人的幸福，不止是他们未来的福祉，这种沟通和坚守始终不移的在路上，扭结在一起变成一个目标，一种信念，就是国家的精神，国家的意志。”</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <h2>淳朴藏族风情与时代军旅风格，倾情演绎雪域高原的动人情感。</h2>
+                        <p>
+                            在原创舞剧《天路》中，舞蹈风格呈现出浓郁的民族风味，导演大量运用藏族舞蹈元素，风格浓郁，充满雪域高原的质朴厚重。同时加入刚劲有力、整齐划一的军旅舞蹈风格，体现出坚韧不拔、令行禁止的军人气质。</p>
+                        <p class="font_son">王舸——“不同的人物群像主要是由当代舞和民间舞来表达，当代舞主要是表现部队铁道兵的，民间舞主要是表现藏民的。</p>
+                        <p>
+                            除了大段表达情绪的群舞片段外，导演还在舞剧中大量运用独、双、三人舞来塑造人物形象，体现细节。特别是大量的三人舞，有战友之间的以及战士和藏民之间的，有相遇、离别、有误会、有兄弟情义等各式各样的三人舞，以此体现剧中人物之间复杂的情感纠葛。</p>
+                        <p>
+                            在本剧中一些情绪反差的舞段设计让剧情丰满富有层次：“相遇是很喜剧的，比如央金的弟弟去抢卢天的口琴，却拿他姐姐来当挡箭牌，很多这种很喜剧色彩的东西。大量的喜剧、悲剧等不同情绪的舞段使得情感的落差非常大，能让你刚刚还在开心的情绪里，一下“哗”地拉到最低。”</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <h2>天路是藏族人民走向富裕之路，更是一条希望之路，精神之路。</h2>
+                        <p>
+                            在整部舞剧中“天路”是运输大量物资，带来富裕的铁路，同时也是一条藏族人民虔诚的精神之路，两条同样勇往直前，风雨无阻的向前之路，在同样对目的地拉萨的向往之中逐渐汇成一条希望之路。王舸：<span
+                                class="font_son">“我觉得天路精神有两个，一个是物质的一个是精神的，精神的是藏民的，他们的信仰之路，朝圣之路。另一条是无数人用血汗修建的这条铁路，让大量物资运输，让西藏地区人民走向富裕。”</span>
+                        </p>
+                        <p class="font_son">
+                            王舸——“隧道这个故事，是铁道兵和藏族人之间的，他们互相不认识，不理解，彼此之间存在着文化上的差异、时代的差异和语言的差异，但是在生活的一点一滴中慢慢融合，最后他们亲眼看着这些士兵里一部分的人把生命奉献在这儿，就是为了这条铁路。”</p>
+                        <p class="font_son">
+                            罗斌——“你会发现这个核心人物他们是在两条线索里面运行的，一方面，西藏地域、藏民族、汉民族精神上的诉求，这是一条主线，他们世世代代、祖祖辈辈都在追逐这种信仰。另外一条线索就是修路这条线索，青藏铁路缘起的时候就是我们故事的一个发生，经历了整个青藏铁路兴建、停止又再复建这样一个历程。”</p>
+                        <p>除了在舞蹈意象及舞蹈语汇上突出“路”的概念，在舞美设计上，也有直接搬上舞台的长达十多米的仿真铁轨，以及由一盏盏酥油灯组成的生命之路。</p>
+                        <p class="font_son">
+                            龚勋——“舞台上的枕木，一条枕木就是一个士兵用身体换来的，他们躺下就像枕木一样拼尽全力。酥油灯，满天的酥油灯，每一盏酥油灯代表了一个奉献在这条铁路上的生命。”</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- 创作解析的文字 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <p>
+                            接到国家大剧院舞剧《天路》的邀请，我十分纠结。因为这是一个太宏大的主题，也是我舞剧导演生涯中所面对的最复杂的一部作品。青藏铁路建设周期横跨半个世纪，涉及老中青三代共计数十万铁路人，同时更涉及汉藏两个民族，军民两个群体。如此繁杂的线索，如何在短短一部舞剧中同时呈现？</p>
+                        <p>以舞剧的叙事手法和舞台呈现形式来看，导演此剧或平铺直叙面面俱到，或独辟蹊径以点及面。幸运的是，在漫长的创作过程中，我找到了这条“蹊径”。</p>
+                        <p>
+                            在多年执导工作中，我始终坚持一个信念——舞剧不仅仅是表现技巧、展现故事、编排调度，更重要的是每一部舞剧都应该有一个独一无二的“魂”，一个能够体现时代特性、展现现实意义，打动当下观众的“精神内核”。这部《天路》亦是如此，希望可以让观众看后有所回味，有所触动。</p>
+                        <p>中国舞剧发展至今，已成为一种兼容并蓄的艺术形式，她可以更加自如的编排，更加自由的表达。此剧我也在诸多方面向前一步，做出尝试，希望能够在中国舞剧探索的道路上添砖加瓦。</p>
+                        <p>希望在天路精神的指引下，我能够为观众铺就一条不一样的神奇“天路”。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <p>
+                            无数次，听过《天路》那支歌，无限辽阔里裹挟了无比的情愫、无穷的怅惘……无意且有意之间，我开始谋篇布局同名同题材的舞剧，瞬间，怅惘变幻成无边的力量！那片大爱大恨大彻大悟的雪域，那些俯仰天地动彻人心的人文，那种血肉筑就人神共寓天路的壮烈，那份澄怀味象勾魂夺魄的情怀，都激发了我，才有了这个筑路与心路交织前行的故事，以及我们一行人的轨迹……愿一缕馨香，伴天路无尽！</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <p>
+                            2001年，我和词作家屈塬看到《人民日报》在头版头条报道“中央决定修建青藏铁路”时，心情非常激动。之前我们多次去过西藏，曾经听说过修建青藏公路时的无数艰难困苦，平均每公里就牺牲一名战士。那时我们想如能通上铁路该多好，但是都不敢想象。听到青藏铁路开工的好消息，我和屈塬满怀激情地创作了歌曲《天路》，后来被大家所熟悉。</p>
+                        <p>
+                            15年之后的2016年，陈平院长告诉我，大剧院决定把歌曲《天路》重新创编成舞剧，对此我既感到高兴又有点担心。多少年来，国内原创舞剧大部分都是古代或民间传说题材，即便现实题材，也大多改编于历史红色经典故事，而敢于用舞剧的形式直接表现改革开放40年的建设成果，讴歌社会主义建设、讴歌改革开放，又是国家大剧院的一个重大突破，无论从现实意义和艺术形式上都会起到引领作用。但“天路”这个题材，写成歌不容易，编成舞剧更是难上加难。创作初期，我和编剧罗斌、导演王舸一起在赵铁春副院长的带领下研究剧本，深切感受到国家大剧院在打造舞剧艺术上的敢为人先，面对当代现实题材创作，不拐弯，不走捷径，不打擦边球，而是正面强攻！两年来，大剧院创作团队细研历史资料，赴藏走访采风，通宵达旦的探讨，一步一步，剧中鲜活的人物、美丽的故事、动人的情境仿佛扑面而来，使我信心越来越足。</p>
+                        <p>
+                            参演这部舞剧的吉林市歌舞团我非常熟悉，与他们有过多次合作。“吉歌”舞蹈的技术能力和艺术水平都非常出色，特别是演员们敢于拼搏的精神给我留下深刻印象。因此我相信，“吉歌”在舞剧《天路》中一定会有令人喝采的表现。</p>
+                        <p>
+                            这部舞剧的音乐广袤、深厚又充满浪漫气息，作曲杨帆是国内非常优秀的青年作曲家，他将民族传统与现代精神在音乐中不露痕迹的融合起来，奔放而又细腻，洒脱而又真诚，当《天路》的歌声以一种新的样式响起时，大家不禁为之动容。
+                        </p>
+                        <p>
+                            我相信，舞剧《天路》一定会为大家带来惊喜，更带来感动。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <p>
+                            对于青藏线，最初的认知更多来源于影像、文字纪实以及印青老师的那首《天路》。直到2017年，受国家大剧院邀约，与王舸导演一行坐上了穿行在藏地的列车。一路采风的同时聊剧本、谈人物，也在慢慢体会着那种“身在地狱、眼入天堂”的真切感受。突然间意识到，这是一条多漫长的路啊....</p>
+                        <p>
+                            “天路”没有生命，它只是静静的随山势起伏蜿蜒，与四季冷暖为伴；但它又见证并承载着太多的记忆、信仰、坚守、羁绊，以及那些曾经或现在依然鲜活的生命和笑脸。因为，它是用生命铸就的。正如剧中的卢天与央金、筑路者与虔诚的藏民，一条“天路”将他们的命运紧紧联系在了一起。而我所希望的，是用音乐写一条“路”，将自己与他们也连在一起。</p>
+                        <p>
+                            窃以为，舞剧音乐创作和其它舞台艺术门类音乐创作有一定的相似性却又不尽相同。难点和挑战在于音乐和舞蹈肢体语言、戏剧情境相融的同时又要保持其自身的独立性。我想，这部舞剧的音乐更多追求内在情感的表述，既是剧中人物的、同时也是舞台上所扮演着角色的演员内心。这种情感空间无疑是多维且复杂的。时而贴近、时而间离，音乐与舞蹈所产生的化学反应或许就是这样。毕竟，说得再多，音乐是要被聆听和感受的。</p>
+                        <p>感谢国家大剧院、印青老师对我的信任，感谢身边所有为了舞剧《天路》默默付出的朋友们。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Scroll Bar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <div class="close js_close_textview">+</div>
+</div>
+
+<!-- js -->
+<script src="../lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="../lib/touchSlide/TouchSlide.1.1.js"></script>
+<script src="../lib/swiper/swiper.min.3.js"></script>
+<script src="js/index.js"></script>
+</body>
+<!-- 统计代码 -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc0f83d11c5318938a003c0a00dcded64' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- Gridsum tracking code begin. -->
+<script type='text/javascript'>
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002230-464E3B/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+</script>
+<!--Gridsum tracking code end. -->
+<script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=841" async defer></script>
+</html>
