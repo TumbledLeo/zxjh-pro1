@@ -108,7 +108,7 @@ gulp.task('server', function () {
   gulp.watch(app.srcPath + 'm/work/*.html', ['yun']);
   gulp.watch(app.srcPath + 'work/*.html', ['yun']);
   gulp.watch(app.srcPath + 'js/**/*.js', ['jsmin']);
- gulp.watch(app.srcPath + 'm/js/**/*.js', ['jsmin']);
+  gulp.watch(app.srcPath + 'm/js/**/*.js', ['jsmin']);
   gulp.watch(app.srcPath + 'images/**/*', ['image']);
   gulp.watch(app.srcPath + 'm/images/**/*', ['image']);
   gulp.watch(app.srcPath + 'css/**/*.scss', ['cssmin']);
